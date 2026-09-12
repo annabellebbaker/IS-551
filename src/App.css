@@ -1,0 +1,391 @@
+/* Financial Literacy App - Main Stylesheet */
+
+:root {
+  --brick-red: #A0342D;
+  --muted-emerald: #2D5F4F;
+  --warm-cream: #F5E6D3;
+  --success-green: #4A7C59;
+  --white: #FFFFFF;
+  --light-gray: #F9F7F4;
+  --dark-gray: #2B2B2B;
+  --accent-tan: #E8D9C8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  background-color: var(--light-gray);
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  background-color: var(--brick-red);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  color: var(--warm-cream);
+  font-family: 'Homemade Apple', cursive;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--warm-cream);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--warm-cream);
+  padding-bottom: 5px;
+}
+
+/* SCREEN CONTAINER */
+.screen-container {
+  min-height: 100vh;
+  background-color: var(--light-gray);
+  padding-bottom: 50px;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, var(--brick-red) 0%, var(--muted-emerald) 100%);
+  color: var(--warm-cream);
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  font-weight: 400;
+}
+
+/* AFFORDANCE SECTION */
+.affordance {
+  background-color: var(--brick-red);
+  color: var(--warm-cream);
+  padding: 50px 40px;
+  text-align: center;
+  max-width: 800px;
+  margin: -30px auto 40px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(160, 52, 45, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+.affordance-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* MAIN CONTENT */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.content {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--brick-red);
+  color: var(--warm-cream);
+}
+
+.btn-primary:hover {
+  background-color: #8B2D25;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(160, 52, 45, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--muted-emerald);
+  color: var(--warm-cream);
+}
+
+.btn-secondary:hover {
+  background-color: #1f4639;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(45, 95, 79, 0.3);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--brick-red);
+  border: 2px solid var(--brick-red);
+}
+
+.btn-outline:hover {
+  background-color: var(--brick-red);
+  color: var(--warm-cream);
+}
+
+.btn-back {
+  background-color: transparent;
+  color: var(--brick-red);
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.btn-back:hover {
+  opacity: 0.7;
+}
+
+/* GRID LAYOUTS */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background-color: var(--white);
+  border: 2px solid var(--muted-emerald);
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 1.5rem;
+  color: var(--brick-red);
+  margin-bottom: 12px;
+}
+
+.card-text {
+  color: var(--dark-gray);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* PROGRESS BAR */
+.progress-bar-container {
+  background-color: var(--accent-tan);
+  border-radius: 4px;
+  height: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar-fill {
+  background-color: var(--success-green);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: width 0.3s ease;
+}
+
+/* CERTIFICATION BADGE */
+.badge {
+  background-color: var(--success-green);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 8px;
+  font-size: 0.95rem;
+}
+
+.badge-earned {
+  background-color: var(--success-green);
+}
+
+.badge-locked {
+  background-color: var(--accent-tan);
+  color: var(--dark-gray);
+  opacity: 0.6;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3 {
+  color: var(--brick-red);
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Homemade Apple', cursive;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: 'Homemade Apple', cursive;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* SECTION */
+.section {
+  margin-bottom: 35px;
+}
+
+.section-title {
+  color: var(--muted-emerald);
+  font-size: 1.3rem;
+  font-family: 'Homemade Apple', cursive;
+  margin-bottom: 15px;
+  border-bottom: 3px solid var(--brick-red);
+  padding-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header {
+    padding: 40px 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .affordance {
+    padding: 30px 20px;
+    margin: -20px 20px 30px;
+  }
+
+  .affordance-text {
+    font-size: 1.2rem;
+  }
+
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 20px 15px;
+  }
+
+  .content {
+    padding: 25px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .affordance-text {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}

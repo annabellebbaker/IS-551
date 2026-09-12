@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Literacy App - Design Spec</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="breadcrumb">
+        <a href="#home">← Back to Home</a>
+    </nav>
+
+    <header class="hero">
+        <h1>Financial Literacy App</h1>
+        <p class="tagline">Design Specification & Prototype Plan</p>
+    </header>
+
+    <main>
+        <!-- AFFORDANCE SECTION - DOMINATES -->
+        <section class="affordance">
+            <h2>The Core Proposition</h2>
+            <p class="affordance-text">
+                Learn financial literacy from real professionals in 5-minute lessons. 
+                Get ahead, invest confidently, earn certifications.
+            </p>
+            <p class="affordance-note">
+                <em>This is the dominant message users encounter on the landing screen.</em>
+            </p>
+        </section>
+
+        <!-- PROBLEM & OPPORTUNITY -->
+        <section class="section-group">
+            <div class="section">
+                <h3>Need: Why Users Are Here</h3>
+                <p>Students need reliable ways to learn financial content in short snippets to increase financial literacy. Many college students and young working professionals lack understanding of key financial terms (mortgage, 401k, Roth IRA). Currently, they rely on social media and family education, costing them years of potential investment growth and financial progress.</p>
+            </div>
+
+            <div class="section">
+                <h3>Persona: Who We're Building For</h3>
+                <p><strong>Primary Users:</strong></p>
+                <ul>
+                    <li>College students looking to get ahead on finances</li>
+                    <li>Young adults entering the workforce early in their careers</li>
+                    <li>Gen Z and Gen Alpha with limited/no personal finance management experience</li>
+                    <li>Users who feel overwhelmed by financial complexity</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Capability: What They Can Do</h3>
+                <ul>
+                    <li>Get ahead on financial terminology and concepts</li>
+                    <li>Put money confidently into their future</li>
+                    <li>Access professional financial expertise without overwhelming complexity</li>
+                    <li>Progress through structured learning at their own pace</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Value: What's Better Afterward</h3>
+                <ul>
+                    <li>Invest faster into future endeavors</li>
+                    <li>Set themselves up for retirement success</li>
+                    <li>Gain confidence to teach others about investing</li>
+                    <li>Eliminate pressure/shame about being "behind" on financial knowledge</li>
+                    <li>Make informed, accountable decisions about their financial future</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- THREE SCREENS -->
+        <section id="screens">
+            <h2>Three Core Screens</h2>
+
+            <div class="screen-card">
+                <h3>Screen 1: Landing / Home</h3>
+                <p class="screen-job"><strong>Main Job:</strong> Introduce the brand identity and encourage entry into the learning experience</p>
+
+                <p><strong>Description:</strong> A welcoming homepage featuring the product name and affordance statement prominently. The landing screen uses a vintage schoolhouse-themed design with warm colors (brick red, emerald, cream) that create positive learning nostalgia. The layout is simple and uncluttered, showcasing learning module categories without competing for attention.</p>
+
+                <p><strong>Why It Earned This Slot:</strong> Establishes brand trust and clarity—users immediately understand what the app is and why they're here.</p>
+
+                <p><strong>Design Question Answered:</strong> "What is this app, and why should I trust it?"</p>
+
+                <p><strong>Navigation:</strong> Home screen (no back button needed; this is the starting point)</p>
+
+                <p><strong>Key Visual Elements:</strong></p>
+                <ul>
+                    <li>Affordance sentence as the dominant visual hierarchy</li>
+                    <li>Product name in simple cursive (ADA adaptable)</li>
+                    <li>Clear value proposition statement</li>
+                    <li>Visual module category cards grouped using proximity</li>
+                    <li>Warm vintage color palette (brick red, muted emerald, cream)</li>
+                </ul>
+            </div>
+
+            <div class="screen-card">
+                <h3>Screen 2: Learning Module</h3>
+                <p class="screen-job"><strong>Main Job:</strong> Demonstrate the learning experience and show how knowledge becomes actionable</p>
+
+                <p><strong>Description:</strong> An interactive learning module for a specific financial term. The screen includes: a progress bar at the top showing module completion, a clear definition, embedded expert video recordings, explanations of future value impact, and recorded walkthroughs showing immediate practical application. Content is chunked into small, manageable sections.</p>
+
+                <p><strong>Why It Earned This Slot:</strong> Shows the core product working—education delivered in short, digestible bites with professional expertise and real-world applicability.</p>
+
+                <p><strong>Design Question Answered:</strong> "What does learning look like here, and can I actually use this information right away?"</p>
+
+                <p><strong>Navigation:</strong> Back arrow to Landing Screen (and/or main menu)</p>
+
+                <p><strong>Key Visual Elements:</strong></p>
+                <ul>
+                    <li>Progress bar (green for completed, muted for incomplete)</li>
+                    <li>Video player for expert content</li>
+                    <li>Definition section with clear typography hierarchy</li>
+                    <li>"Try It" application section showing real-world use</li>
+                    <li>Navigation to next lesson and back to home</li>
+                    <li>Consistent color scheme and typography from Landing Screen</li>
+                </ul>
+            </div>
+
+            <div class="screen-card">
+                <h3>Screen 3: Progress & Achievement Dashboard</h3>
+                <p class="screen-job"><strong>Main Job:</strong> Visualize progress, reward completion, and motivate continued learning</p>
+
+                <p><strong>Description:</strong> A personalized dashboard showing earned certifications, a visual breakdown of module progress across different financial topics, and encouragement through progressive unlocking (basic modules visible first, advanced modules revealed as users level up). The screen celebrates how far users have come and awards them through visual progress indicators.</p>
+
+                <p><strong>Why It Earned This Slot:</strong> Demonstrates the motivational and reward system that keeps users engaged. Shows material evidence of progress and achievement.</p>
+
+                <p><strong>Design Question Answered:</strong> "How am I progressing, and am I being rewarded for my effort?"</p>
+
+                <p><strong>Navigation:</strong> Back arrow to Landing Screen (and/or module selection)</p>
+
+                <p><strong>Key Visual Elements:</strong></p>
+                <ul>
+                    <li>Certification badges earned (visually prominent)</li>
+                    <li>Module progress dashboard (visual chart or grid)</li>
+                    <li>Level progression indicator</li>
+                    <li>Celebration/encouragement messaging</li>
+                    <li>Teaser for locked/upcoming modules</li>
+                    <li>Profile adjustment option (secondary feature, not dominant)</li>
+                    <li>Consistent styling with Screen 1 &amp; 2</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- DESIGN SYSTEM -->
+        <section id="design-system">
+            <h2>Design System</h2>
+
+            <div class="section">
+                <h3>Tone & Voice</h3>
+                <p><strong>Chill, approachable, retro schoolhouse vibe</strong> — Fun yet professional. Avoiding corporate finance language; using conversational, encouraging tone.</p>
+            </div>
+
+            <div class="section">
+                <h3>Color Palette</h3>
+                <ul>
+                    <li><strong>Primary:</strong> Brick red, emerald/muted green, warm cream</li>
+                    <li><strong>Secondary:</strong> Clean whites and neutrals</li>
+                    <li><strong>Success State:</strong> Green (for progress, completed items, positive actions)</li>
+                    <li><strong>Overall Aesthetic:</strong> Vintage schoolhouse warmth</li>
+                </ul>
+                <div class="color-swatches">
+                    <div class="swatch" style="background-color: #A0342D; border: 1px solid #333;"></div>
+                    <span>Brick Red</span>
+                    <div class="swatch" style="background-color: #2D5F4F; border: 1px solid #333;"></div>
+                    <span>Muted Emerald</span>
+                    <div class="swatch" style="background-color: #F5E6D3; border: 1px solid #333;"></div>
+                    <span>Warm Cream</span>
+                    <div class="swatch" style="background-color: #4A7C59; border: 1px solid #333;"></div>
+                    <span>Success Green</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Typography</h3>
+                <ul>
+                    <li><strong>Headings & Product Name:</strong> Simple cursive (must be ADA adaptable)</li>
+                    <li><strong>Body Text:</strong> Times New Roman OR clean Sans Serif</li>
+                    <li><strong>Hierarchy:</strong> Clear distinction through weight and size</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Visual Style</h3>
+                <ul>
+                    <li>Vintage schoolhouse theme with retro inspiration</li>
+                    <li>Warm, nostalgic color blocking</li>
+                    <li>Clear, organized layouts avoiding clutter</li>
+                    <li>Professional iconography with retro twist</li>
+                    <li>Gestalt principles applied: proximity, similarity, continuity ensure visual grouping</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- GESTALT & CONSISTENCY REQUIREMENTS -->
+        <section id="requirements">
+            <h2>Design Review Checklist</h2>
+            <ul class="checklist">
+                <li>✓ Landing screen affordance is dominant—nothing competes with it</li>
+                <li>✓ All three screens have obvious navigation back to landing screen</li>
+                <li>✓ Visual grouping using Gestalt principles (proximity, similarity, continuity)</li>
+                <li>✓ All three screens visually belong to the same product</li>
+                <li>✓ Consistent color palette, typography, and spacing across all screens</li>
+                <li>✓ Supporting content appears only when it supports the primary job</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p><strong>Next Phase:</strong> Detailed wireframes, interactive prototype (Figma), and user testing with target persona.</p>
+        </footer>
+    </main>
+</body>
+</html>
