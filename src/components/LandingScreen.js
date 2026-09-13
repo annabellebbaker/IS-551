@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ProgressHeader from './ProgressHeader';
 import '../App.css';
 
-function LandingScreen() {
+function LandingScreen({ userProgress }) {
   const modules = [
     { id: 'introduction-401k', name: 'Introduction to 401k', icon: '💼' },
     { id: 'roth-ira', name: 'Roth IRA Basics', icon: '📊' },
@@ -16,6 +17,11 @@ function LandingScreen() {
         <h1>FinLearn</h1>
         <p>Your Financial Future Starts Here</p>
       </header>
+
+      <ProgressHeader 
+        completedModules={userProgress.completedModules.length} 
+        totalModules={userProgress.totalModules} 
+      />
 
       <div className="container">
         <div className="affordance">

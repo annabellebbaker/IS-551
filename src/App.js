@@ -17,8 +17,8 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/" element={<LandingScreen />} />
-        <Route path="/learn/:moduleId" element={<LearningModule />} />
+        <Route path="/" element={<LandingScreen userProgress={userProgress} />} />
+        <Route path="/learn/:moduleId" element={<LearningModule userProgress={userProgress} />} />
         <Route path="/progress" element={<ProgressDashboard userProgress={userProgress} setUserProgress={setUserProgress} />} />
       </Routes>
     </Router>
