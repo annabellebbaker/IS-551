@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ProgressHeader from './ProgressHeader';
 import '../App.css';
 
 function ProgressDashboard({ userProgress, setUserProgress }) {
@@ -25,6 +26,11 @@ function ProgressDashboard({ userProgress, setUserProgress }) {
         <h1>FinLearn</h1>
         <p>Your Achievement Dashboard</p>
       </header>
+
+      <ProgressHeader 
+        completedModules={userProgress.completedModules.length} 
+        totalModules={userProgress.totalModules} 
+      />
 
       <div className="container">
         <button className="btn btn-back" onClick={() => navigate('/')}>

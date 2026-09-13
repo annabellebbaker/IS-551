@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import ProgressHeader from './ProgressHeader';
 import '../App.css';
 
-function LearningModule() {
+function LearningModule({ userProgress }) {
   const { moduleId } = useParams();
   const navigate = useNavigate();
   const [lessonProgress, setLessonProgress] = useState(40);
@@ -53,6 +54,11 @@ function LearningModule() {
         <h1>FinLearn</h1>
         <p>Learning Module</p>
       </header>
+
+      <ProgressHeader 
+        completedModules={userProgress.completedModules.length} 
+        totalModules={userProgress.totalModules} 
+      />
 
       <div className="container">
         <button className="btn btn-back" onClick={() => navigate('/')}>
