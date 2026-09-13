@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/financial-literacy-app/static/css/main.3d482cd7.css",
-    "main.js": "/financial-literacy-app/static/js/main.097dfcd7.js",
-    "index.html": "/financial-literacy-app/index.html",
-    "main.3d482cd7.css.map": "/financial-literacy-app/static/css/main.3d482cd7.css.map",
-    "main.097dfcd7.js.map": "/financial-literacy-app/static/js/main.097dfcd7.js.map"
+    "main.css": "/IS-551/static/css/main.3d482cd7.css",
+    "main.js": "/IS-551/static/js/main.535ad156.js",
+    "index.html": "/IS-551/index.html",
+    "main.3d482cd7.css.map": "/IS-551/static/css/main.3d482cd7.css.map",
+    "main.535ad156.js.map": "/IS-551/static/js/main.535ad156.js.map"
   },
   "entrypoints": [
     "static/css/main.3d482cd7.css",
-    "static/js/main.097dfcd7.js"
+    "static/js/main.535ad156.js"
   ]
 }
