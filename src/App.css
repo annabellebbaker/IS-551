@@ -1,14 +1,14 @@
 /* Financial Literacy App - Main Stylesheet */
 
 :root {
-  --brick-red: #A0342D;
-  --muted-emerald: #2D5F4F;
-  --warm-cream: #F5E6D3;
-  --success-green: #4A7C59;
-  --white: #FFFFFF;
-  --light-gray: #F9F7F4;
-  --dark-gray: #2B2B2B;
-  --accent-tan: #E8D9C8;
+  --brick-red: #a0342d;
+  --muted-emerald: #2d5f4f;
+  --warm-cream: #f5e6d3;
+  --success-green: #4a7c59;
+  --white: #ffffff;
+  --light-gray: #f9f7f4;
+  --dark-gray: #2b2b2b;
+  --accent-tan: #e8d9c8;
 }
 
 * {
@@ -17,13 +17,15 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
   line-height: 1.6;
   color: var(--dark-gray);
   background-color: var(--light-gray);
@@ -44,7 +46,7 @@ body {
 
 .navbar-brand {
   color: var(--warm-cream);
-  font-family: 'Homemade Apple', cursive;
+  font-family: "Homemade Apple", cursive;
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: 600;
@@ -133,7 +135,11 @@ body {
 
 /* HEADER */
 .header {
-  background: linear-gradient(135deg, var(--brick-red) 0%, var(--muted-emerald) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--brick-red) 0%,
+    var(--muted-emerald) 100%
+  );
   color: var(--warm-cream);
   padding: 60px 40px;
   text-align: center;
@@ -141,7 +147,7 @@ body {
 }
 
 .header h1 {
-  font-family: 'Homemade Apple', cursive;
+  font-family: "Homemade Apple", cursive;
   font-size: 3.5rem;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -194,7 +200,7 @@ body {
   padding: 12px 24px;
   border: none;
   border-radius: 4px;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -209,7 +215,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #8B2D25;
+  background-color: #8b2d25;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(160, 52, 45, 0.3);
 }
@@ -267,7 +273,9 @@ body {
   border-radius: 8px;
   padding: 25px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .card:hover {
@@ -276,7 +284,7 @@ body {
 }
 
 .card-title {
-  font-family: 'Homemade Apple', cursive;
+  font-family: "Homemade Apple", cursive;
   font-size: 1.5rem;
   color: var(--brick-red);
   margin-bottom: 12px;
@@ -333,7 +341,9 @@ body {
 }
 
 /* TYPOGRAPHY */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--brick-red);
   margin-bottom: 15px;
 }
@@ -344,12 +354,12 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-family: 'Homemade Apple', cursive;
+  font-family: "Homemade Apple", cursive;
 }
 
 h3 {
   font-size: 1.5rem;
-  font-family: 'Homemade Apple', cursive;
+  font-family: "Homemade Apple", cursive;
 }
 
 p {
@@ -365,7 +375,7 @@ p {
 .section-title {
   color: var(--muted-emerald);
   font-size: 1.3rem;
-  font-family: 'Homemade Apple', cursive;
+  font-family: "Homemade Apple", cursive;
   margin-bottom: 15px;
   border-bottom: 3px solid var(--brick-red);
   padding-bottom: 10px;
